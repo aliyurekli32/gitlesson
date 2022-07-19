@@ -1,0 +1,57 @@
+START
+OUTPUT "Please Enter range of the numbers Do You want to Print,Start to End"
+INPUT start_Number,end_Number
+    
+FOR start_Number to end_Number
+    OUTPUT start_Number
+    ENDFOR
+END
+
+
+
+
+START
+OUTPUT "Please Enter range of the numbers Do You want to Print,Start to End"
+INPUT start_Number,end_Number
+    
+FOR start_Number to end_Number
+    IF start_Number%3=0 and start_Number%5=0 
+        OUTPUT start_Number
+ENDFOR
+END
+
+
+
+START
+SET a==0
+WHİLE (a==0)
+    OUTPUT "Please Enter a number for n_1 and a operation( + - * /)"
+    INPUT n_1,oper_num
+    OUTPUT "Please Enter a number for n_2"
+    SET sonuc=n_1 oper_num n_2 
+    PRINT sonuc
+    OUTPUT "Please input 1 when to exit loop otherwise it will run forever"
+    INPUT a
+    IF a!=0
+        SET a=1
+END
+
+START
+OUTPUT"Please enter a number"
+INPUT a
+OUTPUT"Please enter two numbers for range. i for start y for end "
+INPUT i,y
+SET r=random(i,y)
+OUTPUT r
+WHİLE a!=r
+     OUTPUT "Please enter 1 for if  real number is greater than computer guess"
+     INPUT c    
+         IF c==1
+            r=random(r,y)
+            OUTPUT r
+         ELSEIF  
+            r=random(i,r)
+            OUTPUT r
+ENDWHİLE
+PRINT "Congratulations Computer yo have found right number"
+END            
